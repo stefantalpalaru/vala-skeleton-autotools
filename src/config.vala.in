@@ -1,3 +1,4 @@
 namespace Config {
     public const string ICON_DIR = "@ICON_DIR@";
+    public const string DATA_DIR = "@DATA_DIR@";
 }
