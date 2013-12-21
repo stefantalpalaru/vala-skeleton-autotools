@@ -1,4 +1,4 @@
-USING
+USAGE
 
 - edit the first line of configure.ac
 - replace all instances of "vala-skeleton" with your project's name
