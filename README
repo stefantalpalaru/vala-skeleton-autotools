@@ -1,0 +1,7 @@
+Remember to replace the Creative Commons 0 Public Domain Dedication in COPYING with a license appropriate for your project.
+
+
+# on Gentoo there is no 'valac' so we need to do something like:
+VALAC=$(type -P valac-0.22) ./configure
+make
+
