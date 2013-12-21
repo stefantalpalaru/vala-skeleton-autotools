@@ -4,7 +4,7 @@ Vala project skeleton using autotools. Released under the Creative Commons 0 Pub
 
 Usage
 
-- copy and rename the 'vala-skeleton' subdirectory. Further instructions assume it as the working directory.
+- copy and rename the 'vala-skeleton' subdirectory. Further instructions assume it's the working directory.
 - edit the first line of configure.ac
 - replace all instances of "vala-skeleton" with your project's name
 - rename and replace data/vala-skeleton.svg
