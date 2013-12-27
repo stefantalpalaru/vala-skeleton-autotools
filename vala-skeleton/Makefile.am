@@ -1,12 +1,12 @@
 bin_PROGRAMS = vala-skeleton
 vala_skeleton_SOURCES =\
-					   src/config.vala\
+					   src/config2.vala\
 					   src/main.vala\
 					   $(NONE)
 
-CLEANFILES = src/config.vala
+CLEANFILES = src/config2.vala
 
-vala_skeleton_VALAFLAGS = --target-glib @GLIB_VERSION@ --vapidir=$(top_srcdir)/vapi --pkg=gtk+-3.0
+vala_skeleton_VALAFLAGS = --target-glib @GLIB_VERSION@ --vapidir=$(top_srcdir)/vapi --pkg=config --pkg=gtk+-3.0
 
 LIBS =\
 	  @gtk_LIBS@
@@ -22,11 +22,11 @@ uidir = $(pkgdatadir)/
 ui_DATA = data/main.ui\
 		  $(NONE)
 
-EXTRA_DIST = src/config.vala.in\
+EXTRA_DIST = src/config2.vala.in\
 			 $(ui_DATA)\
 			 $(NONE)
 
-src/config.vala: src/config.vala.in
+src/config2.vala: src/config2.vala.in
 	sed -e 's#@ICON_DIR@#$(appiconscalabledir)#g' \
 		-e 's#@DATA_DIR@#$(pkgdatadir)#g' \
 		$< > $@

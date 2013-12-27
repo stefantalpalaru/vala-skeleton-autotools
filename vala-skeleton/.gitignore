@@ -17,7 +17,7 @@ Makefile.in
 .deps
 .dirstamp
 /src/*.c
-/src/config.vala
+/src/config2.vala
 vim.session
 
 /vala-skeleton
