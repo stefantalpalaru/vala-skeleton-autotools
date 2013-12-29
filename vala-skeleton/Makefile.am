@@ -27,12 +27,14 @@ EXTRA_DIST = autogen.sh\
 	     src/config2.vala.in\
 	     $(ui_DATA)\
 	     vapi\
+	     .gitignore\
+	     *.ebuild\
 	     $(EMPTY)
 
 src/config2.vala: src/config2.vala.in
 	sed -e 's#@ICON_DIR@#$(appiconscalabledir)#g' \
 		-e 's#@DATA_DIR@#$(pkgdatadir)#g' \
-		$< > $@
+		$< > $(top_srcdir)/$@
 
 clean-local:
 	-rm -f src/*.c
