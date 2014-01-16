@@ -1,6 +1,6 @@
 ##About##
 
-Vala project skeleton using autotools. Released under the Creative Commons 0 Public Domain Dedication so you can use it in free or commercial projects.
+Vala project skeleton using autotools (a "hello world" GTK3 desktop application). Released under the Creative Commons 0 Public Domain Dedication so you can use it in free or commercial projects.
 
 ##Usage##
 
