@@ -1,7 +1,3 @@
-using Config;
-using Config2;
-using Gtk;
-
 int main (string[] args) {
     Gtk.init (ref args);
 
