@@ -20,7 +20,7 @@ appiconscalabledir = $(iconthemedir)/scalable/apps
 dist_appiconscalable_DATA = data/vala-skeleton.svg
 
 uidir = $(pkgdatadir)/
-ui_DATA = data/*.ui\
+ui_DATA = data/main.ui\
 	  $(EMPTY)
 
 EXTRA_DIST = autogen.sh\
