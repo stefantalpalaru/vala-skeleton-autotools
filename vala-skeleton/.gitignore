@@ -9,6 +9,13 @@ Makefile.in
 /missing
 /stamp-h1
 /config.*
+*.gmo
+*.pot
+/po/Makefile
+/po/Makefile.in
+/po/Makefile.in.in
+/po/POTFILES
+/po/stamp-it
 
 *.swp
 *~

@@ -13,11 +13,14 @@ new_name_underscores="`echo $new_name | tr '-' '_'`"
 cp -a "$old_name" "$new_name"
 git clean -fXdq "${new_name}/"
 git clean -fXdq "${new_name}/src/"
+git clean -fXdq "${new_name}/po/"
 mv "${new_name}/data/${old_name}.svg" "${new_name}/data/${new_name}.svg"
 mv "${new_name}/${old_name}-9999.ebuild" "${new_name}/${new_name}-9999.ebuild"
 sed -i -e "s/$old_name/$new_name/g" "${new_name}/.gitignore"
 sed -i -e "s/$old_name/$new_name/g" -e "s/$old_name_spaces/$new_name_spaces/g" "${new_name}/configure.ac"
 sed -i -e "s/$old_name/$new_name/g" -e "s/$old_name_underscores/$new_name_underscores/g" "${new_name}/Makefile.am"
+sed -i -e "2d" "${new_name}/po/LINGUAS"
+rm "${new_name}/po/it.po"
 
 cat <<END
 

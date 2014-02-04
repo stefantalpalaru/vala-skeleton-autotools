@@ -22,3 +22,14 @@ make
 make install
 ```
 
+- internationalization and localization - creating an Italian translation
+```sh
+cd po
+# edit LINGUAS and add 'it' on a single line
+make update-po
+msginit --locale=it
+# edit it.po and change the charset to 'UTF-8'
+make update-po
+
+```
+

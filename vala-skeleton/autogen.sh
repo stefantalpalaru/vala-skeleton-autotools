@@ -90,7 +90,6 @@ if [ "x$LIBTOOL_VERSION" = "x" ] ; then
     LIBTOOL_VERSION=1.4.2
 fi
 
-
 ##################
 # ident function #
 ##################
@@ -1551,6 +1550,9 @@ config="`echo $config_ac | sed 's/\.ac$//' | sed 's/\.in$//'`"
 if [ "x$config" = "x" ] ; then
     $VERBOSE_ECHO "Could not locate the configure template (from `pwd`)"
 fi
+
+# intltool
+intltoolize --copy --automake
 
 # summarize
 $ECHO "done"

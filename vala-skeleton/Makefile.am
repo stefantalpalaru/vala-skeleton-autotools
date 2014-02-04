@@ -1,4 +1,5 @@
 EMPTY =
+SUBDIRS = po
 bin_PROGRAMS = vala-skeleton
 vala_skeleton_SOURCES =\
 		       src/config2.vala\
@@ -34,6 +35,7 @@ EXTRA_DIST = autogen.sh\
 src/config2.vala: src/config2.vala.in
 	sed -e 's#@ICON_DIR@#$(appiconscalabledir)#g' \
 		-e 's#@DATA_DIR@#$(pkgdatadir)#g' \
+		-e 's#@LOCALE_DIR@#$(datadir)/locale#g' \
 		$< > $(top_srcdir)/$@
 
 clean-local:

@@ -1,0 +1,38 @@
+# Italian translations for vala skeleton package.
+# Copyright (C) 2014 THE vala skeleton'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vala skeleton package.
+#  <stefantalpalaru@yahoo.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vala skeleton 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-04 01:11+0100\n"
+"PO-Revision-Date: 2014-02-03 23:10+0100\n"
+"Last-Translator:  <stefantalpalaru@yahoo.com>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/main.vala:17
+#, c-format
+msgid "UI loading error: %s\n"
+msgstr "Errore durante il caricamento del UI: %s\n"
+
+#: ../src/main.vala:23
+#, c-format
+msgid ""
+"Hello, world!\n"
+"This is %s-%s ."
+msgstr ""
+"Salve, mondo!\n"
+"Questo è %s-%s ."
+
+#: ../src/main.vala:34
+#, c-format
+msgid "Error loading the window icon from the SVG file: %s\n"
+msgstr ""
+"Errore durante il caricamento dell'icona per la finestra dal file SVG: %s\n"
