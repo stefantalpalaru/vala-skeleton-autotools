@@ -16,7 +16,7 @@ VALAC=$(type -P valac-0.22) ./configure
 make
 ```
 
-- install in a local dir during development
+- install in a local directory during development
 ```sh
 ./configure --prefix="`realpath ../usr`"
 make install
@@ -32,4 +32,9 @@ msginit --locale=it
 make update-po
 
 ```
+
+- if you're looking for a similar project, but for CMake and with more bells and whistles, check out [Autovala][1]
+
+
+[1]: https://github.com/rastersoft/autovala
 
