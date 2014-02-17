@@ -1,2 +1,4 @@
 src/main.vala
+[type: gettext/glade]data/main.ui
+data/vala-skeleton.desktop.in.in
 

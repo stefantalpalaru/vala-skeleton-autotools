@@ -6,8 +6,6 @@ vala_skeleton_SOURCES =\
 		       src/main.vala\
 		       $(EMPTY)
 
-MOSTLYCLEANFILES = src/config2.vala
-
 vala_skeleton_VALAFLAGS = --target-glib @GLIB_VERSION@ --vapidir=$(top_srcdir)/vapi --pkg=config --pkg=gtk+-3.0
 
 LIBS =\
@@ -24,9 +22,18 @@ uidir = $(pkgdatadir)/
 ui_DATA = data/main.ui\
 	  $(EMPTY)
 
+desktopdir = $(datadir)/applications
+desktop_in_files = data/@PACKAGE@.desktop.in
+desktop_DATA = data/@PACKAGE@.desktop
+@INTLTOOL_DESKTOP_RULE@
+
+MOSTLYCLEANFILES = src/config2.vala\
+				   $(desktop_DATA)
+
 EXTRA_DIST = autogen.sh\
 	     src/config2.vala.in\
 	     $(ui_DATA)\
+		 $(desktop_in_files).in\
 	     vapi\
 	     .gitignore\
 	     *.ebuild\

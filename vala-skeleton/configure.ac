@@ -18,7 +18,8 @@ PKG_CHECK_MODULES([gtk],[
 
 AC_CONFIG_FILES([
                  Makefile
-		 po/Makefile.in
+                 po/Makefile.in
+                 data/${PACKAGE}.desktop.in
                  ])
 
 AC_OUTPUT

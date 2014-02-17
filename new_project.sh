@@ -15,6 +15,7 @@ git clean -fXdq "${new_name}/"
 git clean -fXdq "${new_name}/src/"
 git clean -fXdq "${new_name}/po/"
 mv "${new_name}/data/${old_name}.svg" "${new_name}/data/${new_name}.svg"
+mv "${new_name}/data/${old_name}.desktop.in.in" "${new_name}/data/${new_name}.desktop.in.in"
 mv "${new_name}/${old_name}-9999.ebuild" "${new_name}/${new_name}-9999.ebuild"
 sed -i -e "s/$old_name/$new_name/g" "${new_name}/.gitignore"
 sed -i -e "s/$old_name/$new_name/g" -e "s/$old_name_spaces/$new_name_spaces/g" "${new_name}/configure.ac"
@@ -27,7 +28,8 @@ cat <<END
 The "$new_name" directory was created. You can now move it somewhere else.
 Edit the first line of "${new_name}/configure.ac" according to
 http://www.gnu.org/software/autoconf/manual/autoconf.html#Initializing-configure ,
-change the icon in "${new_name}/data/${new_name}.svg" to something original
+change the icon in "${new_name}/data/${new_name}.svg" to something original,
+change the program's menu description  in "${new_name}/data/${new_name}.desktop.in.in"
 and put the license of your choice in "${new_name}/COPYING".
 END
 

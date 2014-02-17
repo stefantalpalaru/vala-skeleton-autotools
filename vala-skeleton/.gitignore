@@ -16,6 +16,9 @@ Makefile.in
 /po/Makefile.in.in
 /po/POTFILES
 /po/stamp-it
+po/.intltool-merge-cache
+*.desktop
+*.desktop.in
 
 *.swp
 *~

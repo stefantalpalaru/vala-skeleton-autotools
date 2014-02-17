@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=@PACKAGE@
+_Comment="hello, world" example for Vala using autotools
+Exec=@PACKAGE@
+Icon=@PACKAGE@
+Terminal=false
+Categories=GTK;Utility
