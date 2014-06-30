@@ -20,6 +20,7 @@ int main (string[] args) {
     var window = builder.get_object ("window1") as Gtk.Window;
     var label = builder.get_object ("label1") as Gtk.Label;
     window.title = Config.PACKAGE_NAME;
+    window.set_titlebar(null); // work around gtk+-3.12 window decoration madness
     label.label = _ ("Hello, world!\nThis is %s-%s .").printf (Config.PACKAGE, Config.PACKAGE_VERSION);
     window.destroy.connect (Gtk.main_quit);
     

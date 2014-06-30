@@ -12,7 +12,7 @@ Vala project skeleton using autotools (a "hello world" GTK3 desktop application)
 
 - on Gentoo there is no 'valac' so we need to do something like this in order to build it manually:
 ```sh
-VALAC=$(type -P valac-0.22) ./configure
+VALAC=$(type -P valac-0.24) ./configure
 make
 ```
 
