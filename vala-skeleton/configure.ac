@@ -1,6 +1,6 @@
 AC_INIT([vala skeleton], [0.1], [maintainer@domain], [vala-skeleton], [http://foo.bar])
 
-AM_INIT_AUTOMAKE([subdir-objects])
+AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_HEADER([config.h])
 AC_PROG_CC
 AM_PROG_VALAC
