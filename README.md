@@ -1,14 +1,14 @@
-##About##
+## About
 
 Vala project skeleton using autotools (a "hello world" GTK3 desktop application). Released under the Creative Commons 0 Public Domain Dedication so you can use it in free or commercial projects.
 
-##Usage##
+## Usage
 
 ```sh
 ./new_project.sh my-new-project
 ```
 
-##Tips##
+## Tips
 
 - on Gentoo there is no 'valac' so we need to do something like this in order to build it manually:
 ```sh
